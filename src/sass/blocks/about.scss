@@ -1,0 +1,70 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.about {
+  padding-top: 60px;
+  margin-bottom: 60px;
+
+  &__data {
+    row-gap: 35px;
+  }
+
+  p {
+		color: $dark;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+  &__img {
+    margin: 0 auto;
+    width: 340px;
+    height: 234px;
+    object-fit: cover;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .blog__title {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 758px) {
+  .about {
+    &__img {
+      width: 600px;
+      height: 412px;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .about {
+    &__img {
+      width: 550px;
+      height: 378px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about {
+    &__img {
+      margin: 0 10px 0 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .about {
+    &__img {
+      width: 700px;
+      height: 481px;
+    }
+  }
+}
+
+
+
+

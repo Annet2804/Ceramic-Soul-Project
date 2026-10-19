@@ -1,0 +1,129 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.catalog {
+  padding-top: 50px;
+
+  &__title {
+    margin-top: 60px;
+  }
+
+  &__tabs {
+    max-width: 462px;
+    display: flex;
+    column-gap: 50px;
+    row-gap: 13px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    border: 1px solid $dark;
+    padding: 13px 35px;
+  }
+
+  &__tab {
+    position: relative;
+    border: none;
+    background: none;
+    padding: 0;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000;
+
+    &_active::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #000;
+      bottom: -2px;
+    }
+  }
+
+  &__fortea {
+    margin-top: 60px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 60px;
+  }
+
+  &__fortea1 {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    border: 1px solid #232323;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+    background: #fafafa;
+    padding-bottom: 18px;
+
+    img {
+      width: 340px;
+      object-fit: cover;
+    }
+
+    p {
+      padding-left: 12px;
+      font-weight: 500;
+      font-size: 16px;
+      color: $dark;
+      max-width: 340px;
+    }
+
+    p:first-of-type {
+      padding-top: 4px;
+    }
+  }
+}
+
+@media screen and (min-width: 758px) {
+  .catalog {
+    &__fortea {
+      padding-left: 10px;
+      padding-top: 10px;
+      position: relative;
+
+      @include angle-decoration;    
+    }
+
+    &__tabs {
+      padding: 13px 25px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .catalog {
+    
+
+    &__fortea {
+      padding-left: 25px;
+      padding-top: 25px;
+      gap: 35px;
+    }
+
+    img {
+      width: 340px;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .catalog {
+    &__fortea {
+      gap: 83px;
+      padding-bottom: 100px;
+    }
+
+    &__fortea1 {
+      p {
+        max-width: 285px;
+      }
+    }
+
+    img {
+      width: 285px;
+    }
+  }
+}

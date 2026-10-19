@@ -1,0 +1,110 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.footer {
+  padding-top: 80px;
+  background: $dark;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 18px;
+    flex-wrap: wrap;
+  }
+
+  &__items_col1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    color: $light;
+    padding-top: 40px;
+  }
+
+  &__label_enterEmail {
+    font-weight: 400;
+    font-size: 14px;
+    color: #d9d9d9;
+    padding-top: 40px;
+  }
+
+  &__input_enterEmail {
+    border: none;
+    border-bottom: 1px solid $light;
+    background-color: transparent;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    color: $light;
+    width: 293px;
+  }
+
+  &__checkbox_items {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__checkbox {
+    margin-right: 15px;
+  }
+
+  &__href {
+    color: #a22dc6;
+    text-decoration: none;
+  }
+
+  &__items_col2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 66px;
+  }
+
+  &__item1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__text_href {
+    text-decoration: none;
+    color: $light;
+  }
+
+  &__item_subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__items_col3 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__copyright_item {
+    font-weight: 400;
+    font-size: 14px;
+    color: #fafafa;
+    text-align: center;
+    padding-bottom: 52px;
+  }
+}
+
+
+
+
